@@ -1,0 +1,11 @@
+{
+  "name": "Kernel1_Square",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config_K1Square.cfg"
+    ],
+    "work_dir": "Kernel1_Square"
+  }
+}

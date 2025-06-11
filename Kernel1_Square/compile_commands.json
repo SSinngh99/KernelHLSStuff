@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square",
+    "arguments": [
+      "/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1Add.cpp"
+    ],
+    "file": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1Add.cpp"
+  }
+]
