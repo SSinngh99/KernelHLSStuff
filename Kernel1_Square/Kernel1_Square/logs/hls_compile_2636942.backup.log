@@ -1,0 +1,100 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/Kernel1_Square.hlscompile_summary, at Wed Jun 11 22:50:05 2025
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square -config /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg -cmdlineconfig /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Jun 11 22:50:06 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ahead_user13' on host 'sabidi-OptiPlex-7090' (Linux_x86_64 version 5.15.0-134-generic) on Wed Jun 11 22:50:08 CEST 2025
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square'
+INFO: [HLS 200-2005] Using work_dir /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=Kernel1Add.cpp' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(8)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1Add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=Kernel1_Square' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu250-figd2104-2L-e' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3.65 seconds. CPU system time: 0.31 seconds. Elapsed time: 3.77 seconds; current allocated memory: 336.996 MB.
+INFO: [HLS 200-10] Analyzing design file 'Kernel1Add.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.38 seconds. CPU system time: 0.34 seconds. Elapsed time: 0.71 seconds; current allocated memory: 338.902 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 13 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-387] Ignore depth setting for top argument 'InputK1' (Kernel1Add.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'SquareStream(hls::stream<int, 0>&, hls::stream<int, 0>&)' into 'Kernel1_Square(hls::stream<int, 0>&)' (Kernel1Add.cpp:17:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_1> at Kernel1Add.cpp:10:22 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.36 seconds. CPU system time: 0.38 seconds. Elapsed time: 7.66 seconds; current allocated memory: 340.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 340.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 340.703 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'Kernel1_Square' (Kernel1Add.cpp:17) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 340.703 MB.
+WARNING: [XFORM 203-731] Internal stream variable 'Out' (Kernel1Add.cpp:19) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 361.504 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 361.504 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Kernel1_Square' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Kernel1_Square' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test (axis request operation ('tmp', Kernel1Add.cpp:14->Kernel1Add.cpp:21) on port 'InputK1' (Kernel1Add.cpp:14->Kernel1Add.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test (axis request operation ('tmp', Kernel1Add.cpp:14->Kernel1Add.cpp:21) on port 'InputK1' (Kernel1Add.cpp:14->Kernel1Add.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-878.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 2, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 361.504 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 361.504 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Kernel1_Square' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Kernel1_Square/InputK1' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'Kernel1_Square' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Kernel1_Square'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 361.504 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 361.504 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 361.504 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for Kernel1_Square.
+INFO: [VLOG 209-307] Generating Verilog RTL for Kernel1_Square.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 213.86 MHz
+INFO: [HLS 200-112] Total CPU user time: 6.9 seconds. Total CPU system time: 1.08 seconds. Total elapsed time: 12.71 seconds; peak allocated memory: 361.504 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 16s

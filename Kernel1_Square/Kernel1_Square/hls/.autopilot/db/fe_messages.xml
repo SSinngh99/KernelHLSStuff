@@ -1,0 +1,13 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="Kernel1_Square" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=Kernel1_Square" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Kernel1Square.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel1_Square" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = InputK1 depth=MaxDepth" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-387" msg_severity="WARNING" msg_loc="Kernel1Square.cpp:17:0" msg_body="Ignore depth setting for top argument 'InputK1'"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Kernel1Square.cpp:17:0" msg_body="Inlining function 'SquareStream(hls::stream&lt;int, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)' into 'Kernel1_Square(hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="SquareStream(hls::stream&lt;int, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)" Callee-DebugLoc="File Kernel1Square.cpp Line 8 Column 0" Caller="Kernel1_Square(hls::stream&lt;int, 0&gt;&amp;)" Caller-DebugLoc="File Kernel1Square.cpp Line 17 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

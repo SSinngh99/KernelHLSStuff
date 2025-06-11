@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "Kernel1Square.cpp",
+    "fileloc": 17,
+    "instructions": 12,
+    "name": "Kernel1_Square",
+    "total_instructions": 12
+  }
+}

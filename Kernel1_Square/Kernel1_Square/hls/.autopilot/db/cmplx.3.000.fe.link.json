@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "Kernel1Square.cpp",
+    "fileloc": 17,
+    "instructions": 10,
+    "name": "Kernel1_Square",
+    "total_instructions": 47
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "Kernel1Square.cpp",
+    "fileloc": 8,
+    "instructions": 16,
+    "name": "SquareStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 36
+  }
+}

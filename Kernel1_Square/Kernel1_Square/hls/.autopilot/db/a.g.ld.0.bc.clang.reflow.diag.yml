@@ -1,0 +1,74 @@
+--- !Failure
+Pass:            reflow-check-pragma-conflict
+Name:            IgnoreTopHLSStreamDepth
+DebugLoc:        { File: Kernel1Square.cpp, Line: 17, Column: 0 }
+Function:        _Z14Kernel1_SquareRN3hls6streamIiLi0EEE
+Args:            
+  - String:          'Ignore depth setting for top argument '''
+  - String:          InputK1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Kernel1Square.cpp, Line: 17, Column: 0 }
+Function:        _Z14Kernel1_SquareRN3hls6streamIiLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'SquareStream(hls::stream<int, 0>&, hls::stream<int, 0>&)'
+    DebugLoc:        { File: Kernel1Square.cpp, Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Kernel1_Square(hls::stream<int, 0>&)'
+    DebugLoc:        { File: Kernel1Square.cpp, Line: 17, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: Kernel1Square.cpp, Line: 10, Column: 22 }
+Function:        _Z14Kernel1_SquareRN3hls6streamIiLi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_10_1
+  - String:          ' '
+  - LoopLoc:         'Kernel1Square.cpp:10:22'
+  - String:          ' '
+  - Function:        'Kernel1_Square(hls::stream<int, 0>&)'
+    DebugLoc:        { File: Kernel1Square.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: Kernel1Square.cpp, Line: 10, Column: 22 }
+Function:        _Z14Kernel1_SquareRN3hls6streamIiLi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_10_1
+  - String:          '''('
+  - LoopLoc:         'Kernel1Square.cpp:10:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_10_1
+  - String:          '> at '
+  - LoopLoc:         'Kernel1Square.cpp:10:22'
+  - String:          ' '
+...
+--- !HLSUnsupported
+Pass:            reflow-supported-subset
+Name:            UnsupportedDanglingStream
+DebugLoc:        { File: Kernel1Square.cpp, Line: 19, Column: 18 }
+Function:        _Z14Kernel1_SquareRN3hls6streamIiLi0EEE
+Args:            
+  - String:          'in function '''
+  - Function:        'Kernel1_Square(hls::stream<int, 0>&)'
+    DebugLoc:        { File: Kernel1Square.cpp, Line: 17, Column: 0 }
+  - String:          ''': '
+  - String:          Write internal stream is left dangling
+...

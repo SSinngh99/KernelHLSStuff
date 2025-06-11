@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/Kernel1_Square.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun 11 22:51:35 2025",
+ "timestampMillis": "1749675095745",
+ "buildStep": {
+  "cmdId": "b7c1b4a3-05fe-42be-94af-600478f32b90",
+  "name": "v++",
+  "logFile": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/logs/Kernel1_Square.steps.log",
+  "commandLine": "/media/slowSSD/Xilinx_2024.1/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg --work_dir Kernel1_Square ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg",
+   "--work_dir",
+   "Kernel1_Square"
+  ],
+  "iniFiles": [
+   {
+    "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/hls_config_K1Square.cfg",
+    "content": "part=xcu250-figd2104-2L-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=10ns\nsyn.top=Kernel1_Square\ntb.file=Kernel1Square_test.cpp\nsyn.file=/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1Square.cpp"
+   }
+  ],
+  "cwd": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 11 22:51:35 2025",
+ "timestampMillis": "1749675095745",
+ "status": {
+  "cmdId": "b7c1b4a3-05fe-42be-94af-600478f32b90",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101109",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Kernel1_Square",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1Square.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101110",
+ "buildStep": {
+  "cmdId": "9e77e6fe-a356-4ff9-b301-82631bc5f87a",
+  "name": "csynth_design",
+  "logFile": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101110",
+ "status": {
+  "cmdId": "9e77e6fe-a356-4ff9-b301-82631bc5f87a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101110",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101111",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:41 2025",
+ "timestampMillis": "1749675101111",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110552",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110552",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110552",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110553",
+ "status": {
+  "cmdId": "9e77e6fe-a356-4ff9-b301-82631bc5f87a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110722",
+ "status": {
+  "cmdId": "b7c1b4a3-05fe-42be-94af-600478f32b90",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110784",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/reports/v++_compile_Kernel1_Square_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 11 22:51:50 2025",
+ "timestampMillis": "1749675110784",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user13/AHEAD/Project/Kernel1_Square/Kernel1_Square/reports/.db/v++_compile_Kernel1_Square_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
