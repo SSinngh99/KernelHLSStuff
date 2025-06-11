@@ -1,9 +1,5 @@
 #include "hls_stream.h"
-
-
-
-#define MaxN = 3
-const int MaxDepth = 3;
+#include "Kernel1Square.h"
 
 void SquareStream(hls::stream<int>& InputStream, hls::stream<int>& OutStream){
     int inVal, inputSq;
@@ -14,9 +10,8 @@ void SquareStream(hls::stream<int>& InputStream, hls::stream<int>& OutStream){
     }while (!InputStream.empty());
 }
 
-void Kernel1_Square(hls::stream<int>& InputK1) {
-#pragma HLS INTERFACE axis port = InputK1 depth=MaxDepth
-hls::stream<int> Out;
+void Kernel1_Square(hls::stream<int>& InputK1, hls::stream<int>& Out) {
+#pragma HLS INTERFACE axis port = InputK1 depth=MaxN
 
 SquareStream(InputK1, Out);
 }
