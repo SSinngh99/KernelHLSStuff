@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "Kernel2Sum",
+        "file": "Kernel2Sum.cpp",
+        "fileloc": "3",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

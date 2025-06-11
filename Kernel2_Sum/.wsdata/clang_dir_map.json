@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum",
+  "mapping": {
+    "Kernel2Sum/Kernel2Sum_test.cpp": "Kernel2Sum",
+    "Kernel2Sum/Kernel2Sum.cpp": "Kernel2Sum"
+  }
+}

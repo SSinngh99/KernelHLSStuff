@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../Kernel2Sum.cpp in debug mode
+   Generating csim.exe
+input # = 1, Output stream = 1
+input # = 2, Output stream = 3
+input # = 3, Output stream = 6
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

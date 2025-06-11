@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/Kernel2Sum.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 12 00:01:43 2025",
+ "timestampMillis": "1749679303017",
+ "buildStep": {
+  "cmdId": "dda818c3-4a13-4530-bd7f-c16ddf2616ec",
+  "name": "v++",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/logs/Kernel2Sum.steps.log",
+  "commandLine": "/media/slowSSD/Xilinx_2024.1/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/hls_config.cfg --work_dir Kernel2Sum ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/hls_config.cfg",
+   "--work_dir",
+   "Kernel2Sum"
+  ],
+  "iniFiles": [
+   {
+    "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/hls_config.cfg",
+    "content": "part=xcu250-figd2104-2L-e\n\n[hls]\nflow_target=vitis\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=10ns\nsyn.file=Kernel2Sum.cpp\ntb.file=Kernel2Sum_test.cpp\nsyn.top=Kernel2Sum"
+   }
+  ],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 00:01:43 2025",
+ "timestampMillis": "1749679303017",
+ "status": {
+  "cmdId": "dda818c3-4a13-4530-bd7f-c16ddf2616ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309810",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Kernel2Sum",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309812",
+ "buildStep": {
+  "cmdId": "053ed5e8-de3c-44c9-b9ef-ee665275f506",
+  "name": "csynth_design",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309812",
+ "status": {
+  "cmdId": "053ed5e8-de3c-44c9-b9ef-ee665275f506",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309812",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309812",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:01:49 2025",
+ "timestampMillis": "1749679309813",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320335",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320336",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320336",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320336",
+ "status": {
+  "cmdId": "053ed5e8-de3c-44c9-b9ef-ee665275f506",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320556",
+ "status": {
+  "cmdId": "dda818c3-4a13-4530-bd7f-c16ddf2616ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320624",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/reports/v++_compile_Kernel2Sum_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 00:02:00 2025",
+ "timestampMillis": "1749679320625",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/reports/.db/v++_compile_Kernel2Sum_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'Kernel2Sum'
+================================================================
+* Date:           Thu Jun 12 00:01:59 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        Kernel2Sum
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.795 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_8_1  |        ?|        ?|         2|          2|          1|     ?|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.79>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%inVal1 = alloca i32 1" [Kernel2Sum.cpp:5]   --->   Operation 5 'alloca' 'inVal1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_4" [Kernel2Sum.cpp:3]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [Kernel2Sum.cpp:3]   --->   Operation 7 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %InputStream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %InputStream"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %OutStream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %OutStream"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln5 = store i32 0, i32 %inVal1" [Kernel2Sum.cpp:5]   --->   Operation 13 'store' 'store_ln5' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln8 = br void %do.cond" [Kernel2Sum.cpp:8]   --->   Operation 14 'br' 'br_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%inVal1_1 = load i32 %inVal1" [Kernel2Sum.cpp:10]   --->   Operation 15 'load' 'inVal1_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.07ns)   --->   "%inVal2 = read i32 @_ssdm_op_Read.axis.volatile.i32P128A, i32 %InputStream" [Kernel2Sum.cpp:9]   --->   Operation 16 'read' 'inVal2' <Predicate = true> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 148 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 17 [1/1] (0.88ns)   --->   "%outVal = add i32 %inVal2, i32 %inVal1_1" [Kernel2Sum.cpp:10]   --->   Operation 17 'add' 'outVal' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [2/2] (0.52ns)   --->   "%write_ln12 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %OutStream, i32 %outVal" [Kernel2Sum.cpp:12]   --->   Operation 18 'write' 'write_ln12' <Predicate = true> <Delay = 0.52> <CoreInst = "regslice">   --->   Core 148 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln5 = store i32 %outVal, i32 %inVal1" [Kernel2Sum.cpp:5]   --->   Operation 19 'store' 'store_ln5' <Predicate = true> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 0.52>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln5 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [Kernel2Sum.cpp:5]   --->   Operation 20 'specpipeline' 'specpipeline_ln5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln8 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [Kernel2Sum.cpp:8]   --->   Operation 21 'specloopname' 'specloopname_ln8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/2] (0.52ns)   --->   "%write_ln12 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %OutStream, i32 %outVal" [Kernel2Sum.cpp:12]   --->   Operation 22 'write' 'write_ln12' <Predicate = true> <Delay = 0.52> <CoreInst = "regslice">   --->   Core 148 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 23 [1/1] (0.52ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i32P128A, i32 %InputStream, i32 1" [Kernel2Sum.cpp:14]   --->   Operation 23 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.52> <CoreInst = "regslice">   --->   Core 148 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %tmp, void %do.end, void %do.cond" [Kernel2Sum.cpp:13]   --->   Operation 24 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.38ns)   --->   "%ret_ln15 = ret" [Kernel2Sum.cpp:15]   --->   Operation 25 'ret' 'ret_ln15' <Predicate = (!tmp)> <Delay = 0.38>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.795ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln5', Kernel2Sum.cpp:5) of constant 0 on local variable 'inVal1', Kernel2Sum.cpp:5 [11]  (0.387 ns)
+	'load' operation 32 bit ('inVal1', Kernel2Sum.cpp:10) on local variable 'inVal1', Kernel2Sum.cpp:5 [14]  (0.000 ns)
+	'add' operation 32 bit ('outVal', Kernel2Sum.cpp:10) [18]  (0.880 ns)
+	axis write operation ('write_ln12', Kernel2Sum.cpp:12) on port 'OutStream' (Kernel2Sum.cpp:12) [19]  (0.528 ns)
+
+ <State 2>: 0.528ns
+The critical path consists of the following:
+	axis write operation ('write_ln12', Kernel2Sum.cpp:12) on port 'OutStream' (Kernel2Sum.cpp:12) [19]  (0.528 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

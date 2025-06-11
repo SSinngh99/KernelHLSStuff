@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/.autopilot/db/Kernel2Sum.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_8_1:  '
+    FileOffset:      8
+    FilePath:        Kernel2Sum.cpp
+    Replacements:    
+      - FilePath:        /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum/hls/.autopilot/db/Kernel2Sum.pp.0.cpp
+        Offset:          19784
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_8_1: '
+...

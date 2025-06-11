@@ -1,0 +1,5 @@
+Kernel2Sum_control_s_axi
+Kernel2Sum_regslice_both
+Kernel2Sum_regslice_both
+Kernel2Sum_flow_control_loop_pipe
+Kernel2Sum
