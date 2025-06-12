@@ -1,0 +1,161 @@
+<ENTRY>
+{
+ "thisFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/KernelConnector.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 12 16:07:11 2025",
+ "timestampMillis": "1749737231780",
+ "buildStep": {
+  "cmdId": "21ce84f9-5cb1-4a4f-bffa-004bf2358a16",
+  "name": "vitis-run",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/logs/KernelConnector.steps.log",
+  "commandLine": "/media/slowSSD/Xilinx_2024.1/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg --work_dir KernelConnector ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg",
+   "--work_dir",
+   "KernelConnector"
+  ],
+  "iniFiles": [],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:11 2025",
+ "timestampMillis": "1749737231780",
+ "status": {
+  "cmdId": "21ce84f9-5cb1-4a4f-bffa-004bf2358a16",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 12 16:07:17 2025",
+ "timestampMillis": "1749737237417",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Kernel_Connector",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.h",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.h",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 12 16:07:17 2025",
+ "timestampMillis": "1749737237418",
+ "buildStep": {
+  "cmdId": "6e3b7bd9-edd4-4bd0-b3d1-7a954a621617",
+  "name": "csim_design",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:17 2025",
+ "timestampMillis": "1749737237418",
+ "status": {
+  "cmdId": "6e3b7bd9-edd4-4bd0-b3d1-7a954a621617",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:19 2025",
+ "timestampMillis": "1749737239415",
+ "status": {
+  "cmdId": "6e3b7bd9-edd4-4bd0-b3d1-7a954a621617",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:19 2025",
+ "timestampMillis": "1749737239579",
+ "status": {
+  "cmdId": "21ce84f9-5cb1-4a4f-bffa-004bf2358a16",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:19 2025",
+ "timestampMillis": "1749737239580",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:19 2025",
+ "timestampMillis": "1749737239580",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

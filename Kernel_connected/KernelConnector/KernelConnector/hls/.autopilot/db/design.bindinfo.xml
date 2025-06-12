@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U1" SOURCE="../../Kernel1_Square/Kernel1Square.cpp:8" VARIABLE="inputSq" MODULE="Kernel_Connector_Pipeline_VITIS_LOOP_6_1" LOOP="VITIS_LOOP_6_1" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="outVal_fu_61_p2" SOURCE="../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp:10" VARIABLE="outVal" MODULE="Kernel_Connector_Pipeline_VITIS_LOOP_8_1" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage fifo" ID="" IMPL="srl" LATENCY="0" OPTYPE="fifo" PRAGMA="" RTLNAME="intermediateStream_fifo_U" SOURCE="KernelConnector.cpp:8" VARIABLE="intermediateStream" MODULE="Kernel_Connector" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="array" STORAGESUBTYPE="" STORAGESIZE="32 3 1"/>
+</BindInfo>

@@ -1,0 +1,149 @@
+--- !Failure
+Pass:            reflow-check-pragma-conflict
+Name:            IgnoreTopHLSStreamDepth
+DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Ignore depth setting for top argument '''
+  - String:          InputStream
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 13, 
+                   Column: 0 }
+Function:        Kernel1_Square
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'SquareStream(hls::stream<int, 0>&, hls::stream<int, 0>&)'
+    DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 4, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          Kernel1_Square
+    DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 13, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          Kernel1_Square
+    DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 13, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          Kernel_Connector
+    DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          Kernel2Sum
+    DebugLoc:        { File: ../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp, 
+                       Line: 3, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          Kernel_Connector
+    DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 6, 
+                   Column: 21 }
+Function:        Kernel_Connector
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_6_1
+  - String:          ' '
+  - LoopLoc:         '../../Kernel1_Square/Kernel1Square.cpp:6:21'
+  - String:          ' '
+  - Function:        Kernel_Connector
+    DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp, Line: 8, 
+                   Column: 21 }
+Function:        Kernel_Connector
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_8_1
+  - String:          ' '
+  - LoopLoc:         '../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp:8:21'
+  - String:          ' '
+  - Function:        Kernel_Connector
+    DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp, Line: 8, 
+                   Column: 21 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_8_1
+  - String:          '''('
+  - LoopLoc:         '../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp:8:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ../../Kernel1_Square/Kernel1Square.cpp, Line: 6, 
+                   Column: 21 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_6_1
+  - String:          '''('
+  - LoopLoc:         '../../Kernel1_Square/Kernel1Square.cpp:6:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_6_1
+  - String:          '> at '
+  - LoopLoc:         '../../Kernel1_Square/Kernel1Square.cpp:6:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_8_1
+  - String:          '> at '
+  - LoopLoc:         '../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp:8:21'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-interface-encoding-change
+Name:            InterfaceFieldStructByValue
+DebugLoc:        { File: KernelConnector.cpp, Line: 10, Column: 9 }
+Function:        Kernel_Connector
+Args:            
+  - String:          'Unable to apply INTERFACE pragma options on a pass by value struct member field. Consider changing the signature of the struct to a pass by reference or as a pointer. '
+  - String:          'In function '''
+  - Function:        Kernel_Connector
+    DebugLoc:        { File: KernelConnector.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...

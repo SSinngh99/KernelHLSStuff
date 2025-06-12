@@ -1,0 +1,5 @@
+/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/.autopilot/db/Kernel2Sum.pp.0.cpp:523:5: warning: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+    do {
+    ^~
+    VITIS_LOOP_8_1: 
+/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/.autopilot/db/Kernel2Sum.pp.0.cpp:523:5: note: FIX-IT applied suggested code changes

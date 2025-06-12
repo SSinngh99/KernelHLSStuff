@@ -1,0 +1,9 @@
+{
+  "workspaceRoot": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected",
+  "mapping": {
+    "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp": "KernelConnector",
+    "KernelConnector/KernelConnector_test.cpp": "KernelConnector",
+    "KernelConnector/KernelConnector.cpp": "KernelConnector",
+    "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp": "KernelConnector"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2",
+    "file": "KernelConnector.cpp",
+    "fileloc": 5,
+    "instructions": 14,
+    "name": "Kernel_Connector",
+    "total_instructions": 91
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "Kernel1Square.cpp",
+    "fileloc": 13,
+    "instructions": 2,
+    "name": "Kernel1_Square",
+    "total_instructions": 38
+  },
+  "2": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "Kernel2Sum.cpp",
+    "fileloc": 3,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "Kernel2Sum",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "Kernel1Square.cpp",
+    "fileloc": 4,
+    "instructions": 16,
+    "name": "SquareStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 36
+  }
+}

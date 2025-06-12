@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector",
+    "arguments": [
+      "/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp"
+    ],
+    "file": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp"
+  },
+  {
+    "directory": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector",
+    "arguments": [
+      "/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.cpp"
+    ],
+    "file": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.cpp"
+  },
+  {
+    "directory": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector",
+    "arguments": [
+      "/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp"
+    ],
+    "file": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp"
+  },
+  {
+    "directory": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector",
+    "arguments": [
+      "/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/include",
+      "",
+      "-c",
+      "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector_test.cpp"
+    ],
+    "file": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector_test.cpp"
+  }
+]

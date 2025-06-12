@@ -1,0 +1,3 @@
+relativeroot=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector
+original_argv=--mode hls --csim --config /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg --work_dir KernelConnector 
+

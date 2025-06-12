@@ -1,0 +1,13 @@
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=Kernel_Connector_XLX_SEP_ PragmaOptions=name=Kernel_Connector_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=Kernel_Connector
+        ^
+KernelConnector.cpp:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Kernel_Connector_XLX_SEP_ PragmaOptions=axis port = InputStream depth=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port = InputStream depth=3
+        ^
+KernelConnector.cpp:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Kernel_Connector_XLX_SEP_ PragmaOptions=variable=intermediateStream depth=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=intermediateStream depth=3
+        ^
+KernelConnector.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Kernel_Connector_XLX_SEP_ PragmaOptions=axis port = intermediateStream depth=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port = intermediateStream depth=3
+        ^
+4 warnings generated.

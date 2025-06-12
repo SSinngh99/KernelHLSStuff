@@ -1,0 +1,34 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="Kernel_Connector" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=Kernel_Connector" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="KernelConnector.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel_Connector" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = InputStream depth=3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="KernelConnector.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel_Connector" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=intermediateStream depth=3" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="KernelConnector.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel_Connector" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = intermediateStream depth=3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Kernel1_Square/Kernel1Square.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel1_Square" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = InputK1 depth=3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Kernel2Sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = InputStream depth=3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-387" msg_severity="WARNING" msg_loc="KernelConnector.cpp:5:0" msg_body="Ignore depth setting for top argument 'InputStream'"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../Kernel1_Square/Kernel1Square.cpp:13:0" msg_body="Inlining function 'SquareStream(hls::stream&lt;int, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)' into 'Kernel1_Square'">
+        <args Callee="SquareStream(hls::stream&lt;int, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)" Callee-DebugLoc="File ../../Kernel1_Square/Kernel1Square.cpp Line 4 Column 0" Caller="Kernel1_Square" Caller-DebugLoc="File ../../Kernel1_Square/Kernel1Square.cpp Line 13 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="KernelConnector.cpp:5:0" msg_body="Inlining function 'Kernel1_Square' into 'Kernel_Connector'">
+        <args Callee="Kernel1_Square" Callee-DebugLoc="File ../../Kernel1_Square/Kernel1Square.cpp Line 13 Column 0" Caller="Kernel_Connector" Caller-DebugLoc="File KernelConnector.cpp Line 5 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="KernelConnector.cpp:5:0" msg_body="Inlining function 'Kernel2Sum' into 'Kernel_Connector'">
+        <args Callee="Kernel2Sum" Callee-DebugLoc="File ../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp Line 3 Column 0" Caller="Kernel_Connector" Caller-DebugLoc="File KernelConnector.cpp Line 5 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-238" msg_severity="WARNING" msg_loc="KernelConnector.cpp:10:9" msg_body="Unable to apply INTERFACE pragma options on a pass by value struct member field. Consider changing the signature of the struct to a pass by reference or as a pointer. In function 'Kernel_Connector'">
+        <args Function="Kernel_Connector" Function-DebugLoc="File KernelConnector.cpp Line 5 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

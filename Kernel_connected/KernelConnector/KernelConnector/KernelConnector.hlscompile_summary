@@ -1,0 +1,250 @@
+<ENTRY>
+{
+ "thisFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/KernelConnector.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 12 16:06:47 2025",
+ "timestampMillis": "1749737207573",
+ "buildStep": {
+  "cmdId": "073a24c9-8f21-4f9b-99d0-f64f90bbebe3",
+  "name": "v++",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/logs/KernelConnector.steps.log",
+  "commandLine": "/media/slowSSD/Xilinx_2024.1/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg --work_dir KernelConnector ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg",
+   "--work_dir",
+   "KernelConnector"
+  ],
+  "iniFiles": [
+   {
+    "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg",
+    "content": "part=xcu250-figd2104-2L-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=10ns\nsyn.top=Kernel_Connector\nsyn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp\nsyn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.h\nsyn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp\nsyn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.h\nsyn.file=KernelConnector.cpp\nsyn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.h\ntb.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector_test.cpp"
+   }
+  ],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:06:47 2025",
+ "timestampMillis": "1749737207573",
+ "status": {
+  "cmdId": "073a24c9-8f21-4f9b-99d0-f64f90bbebe3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213377",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Kernel_Connector",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.h",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.h",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.cpp",
+     "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213378",
+ "buildStep": {
+  "cmdId": "da2507ee-6e39-4d5e-b5b5-dc1b8ed6292d",
+  "name": "csynth_design",
+  "logFile": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213378",
+ "status": {
+  "cmdId": "da2507ee-6e39-4d5e-b5b5-dc1b8ed6292d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213378",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213378",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:06:53 2025",
+ "timestampMillis": "1749737213378",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224319",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224320",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224320",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224320",
+ "status": {
+  "cmdId": "da2507ee-6e39-4d5e-b5b5-dc1b8ed6292d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224500",
+ "status": {
+  "cmdId": "073a24c9-8f21-4f9b-99d0-f64f90bbebe3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224570",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/reports/v++_compile_KernelConnector_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 16:07:04 2025",
+ "timestampMillis": "1749737224571",
+ "report": {
+  "path": "/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/reports/.db/v++_compile_KernelConnector_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

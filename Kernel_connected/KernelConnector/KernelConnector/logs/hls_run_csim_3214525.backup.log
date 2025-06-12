@@ -1,0 +1,60 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/KernelConnector.hlsrun_csim_summary, at Thu Jun 12 16:01:12 2025
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector -config /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg -cmdlineconfig /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Jun 12 16:01:14 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /media/slowSSD/Xilinx_2024.1/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ahead_user12' on host 'sabidi-OptiPlex-7090' (Linux_x86_64 version 5.15.0-134-generic) on Thu Jun 12 16:01:16 CEST 2025
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector'
+INFO: [HLS 200-2005] Using work_dir /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.h' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel2_Sum/Kernel2Sum/Kernel2Sum.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.h' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=KernelConnector.cpp' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.h' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector_test.cpp' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file '/media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=Kernel_Connector' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu250-figd2104-2L-e' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../KernelConnector_test.cpp in debug mode
+   Compiling ../../../../KernelConnector.cpp in debug mode
+   Compiling ../../../../../../Kernel1_Square/Kernel1Square.cpp in debug mode
+   Compiling ../../../../../../Kernel2_Sum/Kernel2Sum/Kernel2Sum.cpp in debug mode
+   Generating csim.exe
+ld.lld: error: undefined symbol: Kernel_Connector
+>>> referenced by KernelConnector_test.cpp:12 (../../../../KernelConnector_test.cpp:12)
+>>>               obj/KernelConnector_test.o:(main)
+>>> did you mean to declare Kernel_Connector(hls::stream<int, 0>&, hls::stream<int, 0>&) as extern "C"?
+>>> defined in: obj/KernelConnector.o
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile.rules:350: csim.exe] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 6.97 seconds. Total CPU system time: 0.54 seconds. Total elapsed time: 8.11 seconds; peak allocated memory: 337.316 MB.

@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="KernelConnector.cpp" line="6" pragmaType="interface" parentfunction="Kernel_Connector" mode="axis" port="InputStream" register="1" register_mode="both" name="" depth="3"/>
+<pragma file="KernelConnector.cpp" line="9" pragmaType="stream" parentfunction="Kernel_Connector" depth="3" type="fifo" variable="intermediateStream"/>
+<pragma file="KernelConnector.cpp" line="10" pragmaType="interface" parentfunction="Kernel_Connector" mode="axis" port="intermediateStream" register="1" register_mode="both" name="" depth="3"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<int, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="empty" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+</pragmas>

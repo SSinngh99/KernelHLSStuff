@@ -1,0 +1,578 @@
+
+
+================================================================
+== Vitis HLS Report for 'Kernel_Connector'
+================================================================
+* Date:           Thu Jun 12 16:07:03 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        KernelConnector
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.713 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+        |                                                    |                                          |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+        |                      Instance                      |                  Module                  |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+        +----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+        |grp_Kernel_Connector_Pipeline_VITIS_LOOP_6_1_fu_46  |Kernel_Connector_Pipeline_VITIS_LOOP_6_1  |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_Kernel_Connector_Pipeline_VITIS_LOOP_8_1_fu_53  |Kernel_Connector_Pipeline_VITIS_LOOP_8_1  |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        +----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        -|        -|     -|
+|FIFO                 |        -|      -|        5|       26|     -|
+|Instance             |        -|      3|       38|      167|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|       73|     -|
+|Register             |        -|      -|        8|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      3|       51|      266|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     ~0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|     ~0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------+------------------------------------------+---------+----+----+-----+-----+
+    |                      Instance                      |                  Module                  | BRAM_18K| DSP| FF | LUT | URAM|
+    +----------------------------------------------------+------------------------------------------+---------+----+----+-----+-----+
+    |grp_Kernel_Connector_Pipeline_VITIS_LOOP_6_1_fu_46  |Kernel_Connector_Pipeline_VITIS_LOOP_6_1  |        0|   3|   3|   65|    0|
+    |grp_Kernel_Connector_Pipeline_VITIS_LOOP_8_1_fu_53  |Kernel_Connector_Pipeline_VITIS_LOOP_8_1  |        0|   0|  35|  102|    0|
+    +----------------------------------------------------+------------------------------------------+---------+----+----+-----+-----+
+    |Total                                               |                                          |        0|   3|  38|  167|    0|
+    +----------------------------------------------------+------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +---------------------------+---------+---+----+-----+------+-----+---------+
+    |            Name           | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +---------------------------+---------+---+----+-----+------+-----+---------+
+    |intermediateStream_fifo_U  |        0|  5|   0|    -|     3|   32|       96|
+    +---------------------------+---------+---+----+-----+------+-----+---------+
+    |Total                      |        0|  5|   0|    0|     3|   32|       96|
+    +---------------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |InputStream_TREADY_int_regslice  |   9|          2|    1|          2|
+    |OutStream_write                  |   9|          2|    1|          2|
+    |ap_NS_fsm                        |  37|          7|    1|          7|
+    |intermediateStream_read          |   9|          2|    1|          2|
+    |intermediateStream_write         |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            |  73|         15|    5|         15|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------+---+----+-----+-----------+
+    |                               Name                              | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                        |  6|   0|    6|          0|
+    |grp_Kernel_Connector_Pipeline_VITIS_LOOP_6_1_fu_46_ap_start_reg  |  1|   0|    1|          0|
+    |grp_Kernel_Connector_Pipeline_VITIS_LOOP_8_1_fu_53_ap_start_reg  |  1|   0|    1|          0|
+    +-----------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                            |  8|   0|    8|          0|
+    +-----------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------+-----+-----+------------+------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  Kernel_Connector|  return value|
+|InputStream_TDATA   |   in|   32|        axis|       InputStream|       pointer|
+|InputStream_TVALID  |   in|    1|        axis|       InputStream|       pointer|
+|InputStream_TREADY  |  out|    1|        axis|       InputStream|       pointer|
+|OutStream_din       |  out|   32|     ap_fifo|         OutStream|       pointer|
+|OutStream_full_n    |   in|    1|     ap_fifo|         OutStream|       pointer|
+|OutStream_write     |  out|    1|     ap_fifo|         OutStream|       pointer|
++--------------------+-----+-----+------------+------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%intermediateStream = alloca i64 1" [KernelConnector.cpp:8]   --->   Operation 7 'alloca' 'intermediateStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.46> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+
+State 2 <SV = 1> <Delay = 4.71>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%empty_10 = wait i32 @_ssdm_op_Wait"   --->   Operation 8 'wait' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [2/2] (4.71ns)   --->   "%call_ln0 = call void @Kernel_Connector_Pipeline_VITIS_LOOP_6_1, i32 %InputStream, i32 %intermediateStream"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 4.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.91>
+ST_3 : Operation 10 [1/2] (0.91ns)   --->   "%call_ln0 = call void @Kernel_Connector_Pipeline_VITIS_LOOP_6_1, i32 %InputStream, i32 %intermediateStream"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%empty_11 = wait i32 @_ssdm_op_Wait"   --->   Operation 11 'wait' 'empty_11' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 12 [1/1] (0.00ns)   --->   "%empty_12 = wait i32 @_ssdm_op_Wait"   --->   Operation 12 'wait' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Kernel_Connector_Pipeline_VITIS_LOOP_8_1, i32 %intermediateStream, i32 %OutStream"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3" [KernelConnector.cpp:5]   --->   Operation 14 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %InputStream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %InputStream"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %OutStream, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %OutStream"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @intermediateStream_str, i32 1, void @p_str, void @p_str, i32 3, i32 3, i32 %intermediateStream, i32 %intermediateStream"   --->   Operation 19 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %intermediateStream, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Kernel_Connector_Pipeline_VITIS_LOOP_8_1, i32 %intermediateStream, i32 %OutStream"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln14 = ret" [KernelConnector.cpp:14]   --->   Operation 22 'ret' 'ret_ln14' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ InputStream]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ OutStream]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+intermediateStream (alloca       ) [ 0011111]
+empty_10           (wait         ) [ 0000000]
+call_ln0           (call         ) [ 0000000]
+empty_11           (wait         ) [ 0000000]
+empty_12           (wait         ) [ 0000000]
+spectopmodule_ln5  (spectopmodule) [ 0000000]
+specinterface_ln0  (specinterface) [ 0000000]
+specbitsmap_ln0    (specbitsmap  ) [ 0000000]
+specinterface_ln0  (specinterface) [ 0000000]
+specbitsmap_ln0    (specbitsmap  ) [ 0000000]
+empty              (specchannel  ) [ 0000000]
+specinterface_ln0  (specinterface) [ 0000000]
+call_ln0           (call         ) [ 0000000]
+ret_ln14           (ret          ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="InputStream">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="InputStream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="OutStream">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="OutStream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Wait"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Kernel_Connector_Pipeline_VITIS_LOOP_6_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Kernel_Connector_Pipeline_VITIS_LOOP_8_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="intermediateStream_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="intermediateStream_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="1" slack="0"/>
+<pin id="44" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="intermediateStream/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="grp_Kernel_Connector_Pipeline_VITIS_LOOP_6_1_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="0" slack="0"/>
+<pin id="48" dir="0" index="1" bw="32" slack="0"/>
+<pin id="49" dir="0" index="2" bw="32" slack="1"/>
+<pin id="50" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/2 "/>
+</bind>
+</comp>
+
+<comp id="53" class="1004" name="grp_Kernel_Connector_Pipeline_VITIS_LOOP_8_1_fu_53">
+<pin_list>
+<pin id="54" dir="0" index="0" bw="0" slack="0"/>
+<pin id="55" dir="0" index="1" bw="32" slack="4"/>
+<pin id="56" dir="0" index="2" bw="32" slack="0"/>
+<pin id="57" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1005" name="intermediateStream_reg_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="32" slack="1"/>
+<pin id="62" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="intermediateStream "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="45"><net_src comp="4" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="51"><net_src comp="8" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="52"><net_src comp="0" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="58"><net_src comp="10" pin="0"/><net_sink comp="53" pin=0"/></net>
+
+<net id="59"><net_src comp="2" pin="0"/><net_sink comp="53" pin=2"/></net>
+
+<net id="63"><net_src comp="42" pin="1"/><net_sink comp="60" pin=0"/></net>
+
+<net id="64"><net_src comp="60" pin="1"/><net_sink comp="46" pin=2"/></net>
+
+<net id="65"><net_src comp="60" pin="1"/><net_sink comp="53" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: OutStream | {5 6 }
+ - Input state : 
+	Port: Kernel_Connector : InputStream | {2 3 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------------------------|---------|---------|---------|
+| Operation|                   Functional Unit                  |   DSP   |    FF   |   LUT   |
+|----------|----------------------------------------------------|---------|---------|---------|
+|   call   | grp_Kernel_Connector_Pipeline_VITIS_LOOP_6_1_fu_46 |    3    |    0    |    20   |
+|          | grp_Kernel_Connector_Pipeline_VITIS_LOOP_8_1_fu_53 |    0    |    32   |    39   |
+|----------|----------------------------------------------------|---------|---------|---------|
+|   Total  |                                                    |    3    |    32   |    59   |
+|----------|----------------------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------------+--------+
+|                         |   FF   |
++-------------------------+--------+
+|intermediateStream_reg_60|   32   |
++-------------------------+--------+
+|          Total          |   32   |
++-------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |   DSP  |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    3   |   32   |   59   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |   32   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    3   |   64   |   59   |
++-----------+--------+--------+--------+

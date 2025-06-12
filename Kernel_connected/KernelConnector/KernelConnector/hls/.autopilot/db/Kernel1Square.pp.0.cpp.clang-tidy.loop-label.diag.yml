@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/.autopilot/db/Kernel1Square.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_6_1:  '
+    FileOffset:      6
+    FilePath:        /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel1_Square/Kernel1Square.cpp
+    Replacements:    
+      - FilePath:        /media/diskDrive/ahead/ahead_user12/AHEAD/KernelHLSStuff/Kernel_connected/KernelConnector/KernelConnector/hls/.autopilot/db/Kernel1Square.pp.0.cpp
+        Offset:          19659
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_6_1: '
+...
